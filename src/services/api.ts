@@ -63,6 +63,10 @@ export const authApi = {
     const response = await makeRequest<AuthResponse>('/auth/signup', {
       method: 'POST',
       body: JSON.stringify(data),
+      headers: {
+        'x-mock-response-name': 'Successful Signup',
+        'x-mock-response-code': '201'
+      }
     });
 
     return response;

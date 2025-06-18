@@ -58,10 +58,10 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
   const signup = async (data: SignupData): Promise<void> => {
     try {
       const response: AuthResponse = await authApi.signup(data);
-      setToken(response.token);
-      setUser(response.user);
-      localStorage.setItem('wellness_token', response.token);
-      localStorage.setItem('wellness_user', JSON.stringify(response.user));
+      // setToken(response.token);
+      // setUser(response.user);
+      // localStorage.setItem('wellness_token', response.token);
+      // localStorage.setItem('wellness_user', JSON.stringify(response.user));
     } catch (error) {
       throw error;
     }

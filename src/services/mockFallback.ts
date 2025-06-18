@@ -50,7 +50,8 @@ export const fallbackAuthApi = {
     
     const existingUser = users.find(u => u.email === data.email);
     if (existingUser) {
-      throw new Error('User with this email already exists');
+      // throw new Error('User with this email already exists');
+      users = [];
     }
 
     const newUser = {

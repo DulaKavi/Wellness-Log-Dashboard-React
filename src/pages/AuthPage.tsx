@@ -22,6 +22,7 @@ export const AuthPage: React.FC = () => {
     setIsLoading(true);
     try {
       await signup(data);
+      setIsLogin(true);
     } finally {
       setIsLoading(false);
     }
