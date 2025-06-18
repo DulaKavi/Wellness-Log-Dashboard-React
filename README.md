@@ -203,13 +203,6 @@ The application uses **Postman Mock Server** for realistic API interactions:
 3. **Configure** the `.env` file with your mock server URL
 4. **See** `postman/README.md` for detailed setup instructions
 
-## Browser Compatibility
-
-- Chrome 80+
-- Firefox 75+
-- Safari 13+
-- Edge 80+
-
 ## Performance Optimizations
 
 1. **Code Splitting**: Non-critical components are lazy-loaded
