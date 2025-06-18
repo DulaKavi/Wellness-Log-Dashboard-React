@@ -2,8 +2,6 @@
 
 A React TypeScript application for tracking your wellness journey with mood, sleep, and activity logging. Features user authentication, responsive design, theme switching, and real-time filtering.
 
-## Features
-
 ### ✅ **Core Requirements (Section 1)**
 - **Authentication System**
   - Login/Signup forms with validation
@@ -98,7 +96,6 @@ src/
 
 1. **Clone or download the project files**
    ```bash
-   # If you have the project files, navigate to the project directory
    cd wellness-log-dashboard
    ```
 
@@ -116,7 +113,7 @@ src/
 4. **Configure API URL**
    ```bash
    # Create .env file in project root
-   echo "REACT_APP_API_URL=https://your-mock-server-url.mock.pstmn.io" > .env
+   echo "REACT_APP_API_URL=https://ce5152bb-2381-4c50-a82a-a1acf151addd.mock.pstmn.io" > .env
    ```
 
 5. **Start the development server**
@@ -127,23 +124,6 @@ src/
 6. **Open your browser**
    - Navigate to `http://localhost:3000`
    - The app will make real HTTP requests to your Postman mock server
-
-### Building for Production
-
-```bash
-# Create an optimized production build
-npm run build
-
-# The build files will be in the 'build' directory
-# You can serve them with any static file server
-```
-
-### Testing
-
-```bash
-# Run the test suite
-npm test
-```
 
 ## Usage Guide
 
@@ -186,6 +166,8 @@ npm test
 
 ### Postman Mock Server Endpoints
 
+Postman Mock Server URL - https://ce5152bb-2381-4c50-a82a-a1acf151addd.mock.pstmn.io
+
 The application uses **Postman Mock Server** for realistic API interactions:
 
 #### Authentication
@@ -196,18 +178,6 @@ The application uses **Postman Mock Server** for realistic API interactions:
 - `GET /wellness-logs` - Fetch user's wellness logs
 - `POST /wellness-logs` - Create new wellness log
 - `DELETE /wellness-logs/{id}` - Delete a wellness log
-
-### Setup Required
-1. **Import** the Postman collection from `postman/`
-2. **Create** a mock server in Postman
-3. **Configure** the `.env` file with your mock server URL
-4. **See** `postman/README.md` for detailed setup instructions
-
-### Common Issues
-
-1. **App won't start**: Ensure Node.js 16+ is installed and run `npm install`
-2. **Blank page**: Check browser console for errors, try clearing localStorage
-3. **Styles not loading**: Clear browser cache and restart the development server
 
 ### Data Storage
 
