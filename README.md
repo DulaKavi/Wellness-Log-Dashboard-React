@@ -203,30 +203,6 @@ The application uses **Postman Mock Server** for realistic API interactions:
 3. **Configure** the `.env` file with your mock server URL
 4. **See** `postman/README.md` for detailed setup instructions
 
-## Performance Optimizations
-
-1. **Code Splitting**: Non-critical components are lazy-loaded
-2. **Memoization**: Complex calculations are memoized with useMemo
-3. **Efficient Updates**: Components avoid unnecessary re-renders
-4. **Responsive Images**: Optimized for different screen sizes
-
-## Security Features
-
-- Password strength requirements
-- Client-side form validation
-- Secure token storage
-- XSS protection through React's built-in escaping
-
-## Future Enhancements
-
-- Server-side rendering with Next.js
-- Real backend API integration
-- Data visualization charts
-- Export functionality
-- Mobile app with React Native
-
-## Troubleshooting
-
 ### Common Issues
 
 1. **App won't start**: Ensure Node.js 16+ is installed and run `npm install`
@@ -254,33 +230,3 @@ This project fulfills all requirements from the technical assessment:
 - ✅ Protected dashboard access
 - ✅ Search functionality for wellness logs
 
-### Section 2 Requirements ✅
-- ✅ Component lazy loading for performance
-- ✅ Theme switching with Context API
-- ✅ State management with proper error handling
-
-### Section 3 Answers
-
-1. **Responsive tabs component**: Use flexbox with `flex-wrap`, implement touch gestures for mobile, use CSS breakpoints for layout adaptation.
-
-2. **Virtualized list optimization**: Implement windowing with libraries like react-window, use fixed item heights, implement infinite scrolling, and memoize list items.
-
-3. **Accessibility features**: Add proper ARIA labels, support keyboard navigation (Tab, Enter, Escape), provide screen reader announcements, and ensure focus management.
-
-4. **Client-side auth security**: Store tokens in httpOnly cookies when possible, implement token refresh, use HTTPS, validate tokens client-side, and implement proper logout.
-
-5. **SSR benefits/challenges**: Benefits include better SEO and faster initial load. Challenges include hydration complexity, server requirements, and increased deployment complexity.
-
-### React Native Answers
-
-1. **Component differences**: View is like div (container), Text handles all text content (required for text), ScrollView enables scrolling with momentum.
-
-2. **Secure credential storage**: Use react-native-keychain for iOS/Android keychain storage, implement biometric authentication, and use secure storage libraries.
-
-3. **Navigate vs Push**: Navigate replaces current screen, push adds to stack. Navigate can go to any screen, push only adds to top of stack.
-
-4. **Performance improvement**: Use FlatList for large lists, optimize images, implement lazy loading, use native modules for heavy operations, and avoid inline functions in render.
-
----
-
-**Developed as part of a technical assessment demonstrating React TypeScript proficiency, responsive design, and modern web development practices.** 
